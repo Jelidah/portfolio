@@ -10,11 +10,9 @@ import {
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
-import BotModal from "./components/ai/BotModal";
 
 function App() {
     const [mode, setMode] = useState<string>('dark');
-    const [isBotOpen, setIsBotOpen] = useState(false);
 
     const handleModeChange = () => {
         setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
